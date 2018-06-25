@@ -1,10 +1,10 @@
 .PHONY: default clean
 
-default: build-dfa
+default: build
 
-build-dfa:
-	jbuilder build dfa.exe
-	cp _build/default/dfa.exe dfa
+build:
+	jbuilder build main.exe
+	cp _build/default/main.exe automata
 
 clean:
-	rm -rf _build dfa 
+	rm -rf _build automata 

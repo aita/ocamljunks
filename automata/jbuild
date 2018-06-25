@@ -1,6 +1,11 @@
 (jbuild_version 1)
 
+(library
+  ((name automata)
+   (modules (:standard \ main))
+   (libraries (base))))
+
 (executable
- ((name dfa)
-  (modules dfa)
-  (libraries (core))))
+ ((name main)
+  (modules main)
+  (libraries (automata base stdio))))
